@@ -5,9 +5,10 @@
 <!-- EmulaROMss-v2.0.xml | Autor: Robinson Avila | By: WinDroidMODs -->
 
 <head>
-
-<meta content='vkBIkIlipRaAVyFP19JptqcD_1yhF7WVYRyR4LG8t0Y' name='google-site-verification'/> 
   
+<meta content='vkBIkIlipRaAVyFP19JptqcD_1yhF7WVYRyR4LG8t0Y' name='google-site-verification'/>
+  
+<!-- Google tag (gtag.js) -->
 <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-Z61XVJJ1HM'/>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,7 +16,7 @@
   gtag(&#39;js&#39;, new Date());
 
   gtag(&#39;config&#39;, &#39;G-Z61XVJJ1HM&#39;);
-</script>  
+</script>
   
 <meta expr:charset='data:blog.encoding'/>
 <meta expr:content='data:view.isHomepage ? &quot;website&quot; : &quot;article&quot;' property='og:type'/>
@@ -24,44 +25,35 @@
 <meta expr:content='data:blog.title' property='og:site_name'/>
 <meta content='unsafe-url' name='referrer'/>
 <meta content='summary_large_image' name='twitter:card'/>
-
 <link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>
-
 <meta expr:content='data:view.url.canonical' property='og:url'/>
 <link expr:href='data:view.url.canonical' rel='canonical'/>
-
 <b:if cond='data:view.description'>
   <meta expr:content='data:view.description.escaped' property='og:description'/>
   <meta expr:content='data:view.description.escaped' name='description'/>
 </b:if>
-
 <b:if cond='data:view.isError or data:view.isArchive or data:view.isSearch'>
   <meta content='noindex,follow' name='robots'/>
 </b:if>
-
 <b:if cond='data:widgets'>
   <b:loop values='data:widgets.Blog.first.posts where (p =&gt; p.featuredImage) map (p =&gt; p.featuredImage)' var='imageUrl'>
     <meta expr:content='resizeImage(data:imageUrl,1200)' property='og:image'/>
   </b:loop>
 </b:if>
-
 <b:with value='data:view.isError ? data:messages.theresNothingHere : data:view.title.escaped' var='title'>
   <meta expr:content='data:title' property='og:title'/>
   <meta expr:content='data:title' name='twitter:title'/>
   <title><data:title/></title>
 </b:with>
-
 <b:if cond='data:blog.feedLinks'>
   <b:with value='path(data:blog.homepageUrl.canonical,&quot;feeds/posts/default&quot;)' var='feeds'>
     <link expr:href='data:feeds' rel='alternate' title='Atom 1.0' type='application/atom+xml'/>
     <link expr:href='data:feeds params {alt: &quot;rss&quot;}' rel='alternate' title='RSS 2.0' type='application/rss+xml'/>
   </b:with>
 </b:if>
-
 <b:if cond='data:widgets.AdSense.first or data:blog.adsenseClientId'>
   <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
 </b:if>
-
 <script type='application/ld+json'>
 {
   &quot;@context&quot;: &quot;http://schema.org&quot;,
@@ -74,17 +66,13 @@
   }
 }
 </script>
-
 <meta content='public' http-equiv='cache-control'/>
 <meta content='Tue, 01 Jan 2026 12:00:00 GMT' http-equiv='expires'/>
-
 <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/WinDroidMODs/mis-fuentes@main/playfair-display-v40-latin-700.woff2' rel='preload' type='font/woff2'/>
 <link href='https://cdn.jsdelivr.net' rel='preconnect'/>
-
-<link as='style' href='https://cdn.jsdelivr.net/gh/WinDroidMODs/mis-estilos@main/styles/EmulaROMss-General-v2.0.css' onload='this.onload=null;this.rel=&apos;stylesheet&apos;' rel='preload'/>
+<link as='style' href='https://cdn.jsdelivr.net/gh/WinDroidMODs/mis-estilos@main/styles/EmulaROMss-General-v2.0.css' onload='this.onload=null;this.rel=&quot;stylesheet&quot;' rel='preload'/>
 <noscript><link href='https://cdn.jsdelivr.net/gh/WinDroidMODs/mis-estilos@main/styles/EmulaROMss-General-v2.0.css' rel='stylesheet'/></noscript>
-
-<link as='style' href='https://cdn.jsdelivr.net/gh/WinDroidMODs/mis-estilos@main/styles/EmulaROMss-Card-v2.0.css' onload='this.onload=null;this.rel=&apos;stylesheet&apos;' rel='preload'/>
+<link as='style' href='https://cdn.jsdelivr.net/gh/WinDroidMODs/mis-estilos@main/styles/EmulaROMss-Card-v2.0.css' onload='this.onload=null;this.rel=&quot;stylesheet&quot;' rel='preload'/>
 <noscript><link href='https://cdn.jsdelivr.net/gh/WinDroidMODs/mis-estilos@main/styles/EmulaROMss-Card-v2.0.css' rel='stylesheet'/></noscript>
 
 <style>/*<![CDATA[*/
@@ -114,7 +102,7 @@ html{scrollbar-color:var(--accent) #0a0a0f;scrollbar-width:thin}
 .header .widget, #header-logo .widget, #header-menu .widget, #footer-links .widget, .footer .widget {background:transparent !important;border:none !important;box-shadow:none !important;padding:0 !important;margin:0 !important}
 .logo{display:flex;align-items:center;gap:.5rem;z-index:1001;line-height:1}
 .logo__img{width:32px;height:32px;border-radius:7px;object-fit:cover}
-.logo__text{font-size:1.25rem;font-weight:700;color:var(--accent);letter-spacing:-.5px;white-space:nowrap;line-height:1;font-family:'Playfair Display', 'Georgia', serif}
+.logo__text{font-size:1.25rem;font-weight:700;color:var(--accent);letter-spacing:-.5px;white-space:nowrap;line-height:1;font-family:'Playfair Display','Georgia',serif}
 .logo::before{content:"\f11b";font-family:"Font Awesome 5 Free";font-weight:900;font-size:1.3rem;color:var(--accent);margin-right:.4rem}
 .logo.has-image::before{display:none}
 #nav-check, #search-check{display:none}
@@ -912,6 +900,64 @@ body.light-theme .announcement-box .notification-box h5 { color: #0f172a !import
 body.light-theme .announcement-box .notification-box p { color: #334155 !important; }
 body.light-theme .announcement-box .notification-box a { color: #2e7d32 !important; }
 body.light-theme .apk-section h2 { color: #0f172a !important; }
+
+#related-posts-root .post-card,
+#related-posts-root .post-card * { box-sizing: border-box; margin: 0; padding: 0; }
+#related-posts-root .post-card { background: rgba(56, 142, 60, 0.15) !important; border-radius: 30px !important; overflow: hidden !important; transition: none !important; border: none !important; text-decoration: none !important; display: block !important; color: inherit !important; position: relative !important; height: auto !important; min-height: unset !important; max-width: unset !important; box-shadow: none !important; transform: none !important; }
+#related-posts-root .post-card:hover { transform: none !important; box-shadow: none !important; }
+#related-posts-root .post-card__img { position: relative !important; aspect-ratio: 1 / 1 !important; width: 100% !important; background: transparent !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 10px !important; border-radius: 30px !important; margin: 0 !important; }
+#related-posts-root .post-card__img img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top !important; display: block !important; transition: none !important; border-radius: 40px !important; margin: 0 !important; padding: 0 !important; border: none !important; max-width: none !important; }
+#related-posts-root .post-card:hover .post-card__img img { transform: none !important; }
+#related-posts-root .img-overlay { position: absolute !important; top: 10px !important; left: 10px !important; right: 10px !important; bottom: 10px !important; background: rgba(0, 0, 0, 0.7) !important; display: flex !important; align-items: center !important; justify-content: center !important; opacity: 0 !important; transition: opacity 0.3s ease !important; border-radius: 40px !important; pointer-events: none !important; margin: 0 !important; padding: 0 !important; }
+#related-posts-root .post-card:hover .img-overlay { opacity: 1 !important; }
+#related-posts-root .img-overlay i { font-size: 2rem !important; color: white !important; background: rgba(56, 142, 60, 0.9) !important; width: 50px !important; height: 50px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; pointer-events: none !important; }
+#related-posts-root .post-card__featured-tag { position: absolute !important; top: 12px !important; left: 12px !important; background: rgba(0, 0, 0, 0.7) !important; backdrop-filter: blur(4px) !important; padding: 4px 10px !important; border-radius: 30px !important; font-size: 0.7rem !important; font-weight: 600 !important; color: #fff !important; text-transform: uppercase !important; letter-spacing: 0.5px !important; z-index: 2 !important; pointer-events: none !important; }
+#related-posts-root .post-card__body { padding: 0 10px 10px 10px !important; text-align: center !important; color: inherit !important; background: transparent !important; }
+#related-posts-root .post-card__title { font-size: 1rem !important; font-weight: 700 !important; margin-bottom: 0.5rem !important; line-height: 1.3 !important; display: -webkit-box !important; -webkit-line-clamp: 2 !important; -webkit-box-orient: vertical !important; overflow: hidden !important; text-overflow: ellipsis !important; color: #f5f5f5 !important; }
+@media (max-width: 768px) { #related-posts-root .post-card__title { font-size: 0.9rem !important; } }
+@media (max-width: 480px) { #related-posts-root .post-card__title { font-size: 0.85rem !important; } }
+#related-posts-root .post-card__title:hover { color: #388E3C !important; }
+#related-posts-root .post-card__version { font-size: 0.75rem !important; color: #aaa !important; background: rgba(0, 0, 0, 0.3) !important; display: inline-block !important; padding: 0.2rem 0.6rem !important; border-radius: 20px !important; margin-bottom: 0.5rem !important; }
+#related-posts-root .post-card__date { font-size: 0.7rem !important; color: #9e9e9e !important; margin-bottom: 0.5rem !important; }
+#related-posts-root .rating-stars { display: flex !important; justify-content: center !important; gap: 0.2rem !important; }
+#related-posts-root .rating-star { width: 16px !important; height: 16px !important; display: inline-block !important; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%) !important; box-shadow: 0 0 4px rgba(255, 215, 0, 0.5), inset 0 0 4px rgba(255, 255, 255, 0.8) !important; }
+#related-posts-root .rating-star.full { background: radial-gradient(circle at 30% 30%, #fff8c5 0%, #ffd700 40%, #ffa500 100%) !important; }
+#related-posts-root .rating-star.empty { background: #e0e0e0 !important; }
+.related-posts { margin: 25px 0 15px; position: relative; }
+.related-posts .section-title { color: #388E3C !important; font-family: 'Oswald', 'Segoe UI', system-ui, sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 10px; padding-bottom: 6px; position: relative; }
+.related-posts .section-title .title-underline { background: linear-gradient(90deg, #ffeb00, #388e3c); border-radius: 2px; bottom: 0; height: 3px; left: 0; position: absolute; width: 40px; }
+.related-grid { display: flex; flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 1rem; padding-bottom: 12px; scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: var(--accent) #0a0a0f; }
+.related-grid::-webkit-scrollbar { height: 6px; }
+.related-grid::-webkit-scrollbar-track { background: #0a0a0f; }
+.related-grid::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+.related-grid .post-card { flex: 0 0 auto; scroll-snap-align: start; }
+@media (max-width: 599px) { .related-grid .post-card { width: calc(50% - 0.5rem) !important; } }
+@media (min-width: 600px) and (max-width: 899px) { .related-grid .post-card { width: calc(33.333% - 0.7rem) !important; } }
+@media (min-width: 900px) { .related-grid .post-card { width: calc(25% - 0.75rem) !important; } }
+.carousel-controls { display: flex; justify-content: center; gap: 0.8rem; margin-top: 0.8rem; }
+.carousel-btn { display: inline-flex; align-items: center; gap: 0.4rem; background: #13131d; border: 1px solid #1e1e2e; color: #e0e0e0; padding: 0.5rem 1.2rem; border-radius: 40px; font-weight: 600; font-size: 0.85rem; transition: all 0.2s; text-decoration: none; cursor: pointer; }
+.carousel-btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.3); }
+.carousel-btn i { font-size: 0.9rem; }
+.carousel-btn.hidden-btn { visibility: hidden; opacity: 0; pointer-events: none; }
+@media (max-width: 599px) { .carousel-btn { background: transparent; border: 1px solid rgba(255,255,255,0.2); color: #b0bec5; padding: 0.4rem 0.6rem; font-size: 0; gap: 0; border-radius: 50%; width: 36px; height: 36px; justify-content: center; }
+  .carousel-btn i { font-size: 1rem; margin: 0; }
+  .carousel-btn:hover { background: rgba(56, 142, 60, 0.3); border-color: var(--accent); color: #fff; transform: none; box-shadow: none; } }
+
+.post-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #f5f5f5;
+}
+@media (max-width: 768px) { .post-card__title { font-size: 0.9rem; } }
+@media (max-width: 480px) { .post-card__title { font-size: 0.85rem; } }
+.post-card__title:hover { color: #388E3C; }
 ]]></style>
 
 <b:skin><![CDATA[
@@ -937,6 +983,36 @@ body#layout .sidebar{width:35%}
   .loading-text{margin-top:12px;font-size:.8rem;color:#aaa;font-family:&#39;Roboto&#39;,sans-serif;letter-spacing:.5px}
   @keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
 </style>
+  
+<style>
+  body.light-theme #related-posts-root .post-card,
+  body.light-theme .apk-container .post-card {
+    background: rgba(46, 125, 50, 0.08) !important;
+    border-radius: 30px !important;
+  }
+
+  body.light-theme #related-posts-root .post-card__title,
+  body.light-theme .apk-container .post-card__title {
+    color: #0f172a !important;
+  }
+
+  body.light-theme #related-posts-root .post-card__version,
+  body.light-theme .apk-container .post-card__version {
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: #475569 !important;
+  }
+
+  body.light-theme #related-posts-root .post-card__date,
+  body.light-theme .apk-container .post-card__date {
+    color: #64748b !important;
+  }
+
+  body.light-theme #related-posts-root .rating-star.empty,
+  body.light-theme .apk-container .rating-star.empty {
+    background: #cbd5e1 !important;
+  }
+</style>
+  
 </head>
 
 <body>
@@ -1225,7 +1301,6 @@ body#layout .sidebar{width:35%}
               </div>
               <div id='pagination-wrapper' style='display: flex; justify-content: center; flex-wrap: wrap; gap: 0.4rem; margin: 2rem 0;'/>
               
-              <!-- Anuncio -->
               <div class='announcement-box' style='background: #13131d; border: 1px solid #1e1e2e; border-radius: 12px; padding: 1.5rem; margin-top: 1rem; margin-bottom: 1.5rem;'>
                 <h4 class='announcement-title' style='color: #388E3C; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;'>Anuncio</h4>
                 <h2 class='announcement-heading' style='color: #f5f5f5; font-size: 1.8rem; font-weight: 700; margin-bottom: 0.8rem; font-family: &apos;Oswald&apos;, sans-serif;'>Bienvenido a EmulaROMss</h2>
@@ -1240,10 +1315,13 @@ body#layout .sidebar{width:35%}
                 </div>
               </div>
 
-              <!-- Sección Aplicaciones Android -->
-              <div class='apk-section' style='margin-top: 1.5rem; margin-bottom: 1.5rem;'>
+              <div class='apk-section' id='apk-section' style='margin-top: 1.5rem; margin-bottom: 1.5rem;'>
                   <h2 style='color: #f5f5f5; font-size: 1.5rem; font-weight: 700; font-family: &apos;Oswald&apos;, sans-serif; margin-bottom: 1rem;'>Aplicaciones Android</h2>
                   <div class='apk-container' id='apk-carousel' style='display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 1rem; padding-bottom: 12px; scroll-behavior: smooth; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--accent) #0a0a0f;'>
+                  </div>
+                  <div class='carousel-controls'>
+                    <button aria-label='Ver anterior' class='carousel-btn' id='apk-carousel-prev'><i class='fas fa-arrow-left'/> <span>Anterior</span></button>
+                    <button aria-label='Ver siguiente' class='carousel-btn' id='apk-carousel-next'><span>Siguiente</span> <i class='fas fa-arrow-right'/></button>
                   </div>
               </div>
 
@@ -1274,60 +1352,6 @@ body#layout .sidebar{width:35%}
     return `${baseUrl}?${params}`;
   }
 
-  function renderPosts(posts) {
-    grid.innerHTML = '';
-    posts.forEach(function(post) {
-      let title = post.title.$t;
-      let postUrl = '';
-      for (let i = 0; i < post.link.length; i++) {
-        if (post.link[i].rel === 'alternate') { postUrl = post.link[i].href; break; }
-      }
-      let thumbnail = 'https://2.bp.blogspot.com/-1J-byOnRoAI/W3Cot79qVUI/AAAAAAAADmE/IwXCcRdJl70_yR7FivfpmM62MVqD4CwbQCLcBGAs/s1600/no-img-blogger.png';
-      if (post.media$thumbnail && post.media$thumbnail.url) {
-        thumbnail = post.media$thumbnail.url.replace(/s72-c/, 's500');
-      }
-
-      let categories = [];
-      if (post.category) { post.category.forEach(c => categories.push(c.term)); }
-      
-      let version = null, format = null, rating = null, firstLabel = categories.length > 0 ? categories[0] : '';
-      for(let i=0; i<categories.length; i++){
-        let lbl = categories[i].trim();
-        if(lbl.toLowerCase().match(/^w/)) { format = lbl.substring(1); break; }
-      }
-      if(!format) {
-        for(let i=0; i<categories.length; i++){
-          let lbl = categories[i].trim();
-          if(lbl.toLowerCase().match(/^v\d+(\.\d+)*/)) { version = lbl; break; }
-        }
-      }
-      for(let i=0; i<categories.length; i++){
-        let lbl = categories[i].trim();
-        let match = lbl.toLowerCase().match(/^z(\d+(?:\.\d+)?)/);
-        if(match) { rating = parseFloat(match[1]); break; }
-      }
-
-      let dateStr = new Date(post.published.$t).toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
-
-      let cardHtml = `
-        <a class="post-card" href="${postUrl}" style="text-decoration: none; display: block;">
-          <div class="post-card__img">
-            <img src="${thumbnail}" alt="${title}" loading="lazy" width="500" height="500">
-            <span class="img-overlay"><i class="fas fa-download"></i></span>
-          </div>
-          <div class="post-card__body">
-            <h3 class="post-card__title">${title}</h3>
-            <div class="post-card__version">${format ? 'Formato: '+format : (version ? 'Versión: '+version : '')}</div>
-            <div class="post-card__date">${dateStr}</div>
-            <div class="rating-stars">${renderStars(rating)}</div>
-          </div>
-          <div class="post-card__featured-tag">${firstLabel}</div>
-        </a>
-      `;
-      grid.insertAdjacentHTML('beforeend', cardHtml);
-    });
-  }
-
   function renderStars(rating) {
     if (rating === null || isNaN(rating)) return '';
     let html = '';
@@ -1341,6 +1365,64 @@ body#layout .sidebar{width:35%}
       } else html += '<div class="rating-star empty"></div>';
     }
     return html;
+  }
+
+  function buildPostCard(post) {
+    let title = post.title.$t;
+    let postUrl = '';
+    for (let i = 0; i < post.link.length; i++) {
+      if (post.link[i].rel === 'alternate') { postUrl = post.link[i].href; break; }
+    }
+    let thumbnail = 'https://2.bp.blogspot.com/-1J-byOnRoAI/W3Cot79qVUI/AAAAAAAADmE/IwXCcRdJl70_yR7FivfpmM62MVqD4CwbQCLcBGAs/s1600/no-img-blogger.png';
+    if (post.media$thumbnail && post.media$thumbnail.url) {
+      thumbnail = post.media$thumbnail.url.replace(/s72-c/, 's500');
+    }
+
+    let categories = [];
+    if (post.category) { post.category.forEach(c => categories.push(c.term)); }
+    
+    let version = null, format = null, rating = null, firstLabel = categories.length > 0 ? categories[0] : '';
+    for(let i=0; i<categories.length; i++){
+      let lbl = categories[i].trim();
+      if(lbl.toLowerCase().match(/^w/)) { format = lbl.substring(1); break; }
+    }
+    if(!format) {
+      for(let i=0; i<categories.length; i++){
+        let lbl = categories[i].trim();
+        if(lbl.toLowerCase().match(/^v\d+(\.\d+)*/)) { version = lbl; break; }
+      }
+    }
+    for(let i=0; i<categories.length; i++){
+      let lbl = categories[i].trim();
+      let match = lbl.toLowerCase().match(/^z(\d+(?:\.\d+)?)/);
+      if(match) { rating = parseFloat(match[1]); break; }
+    }
+
+    let dateStr = new Date(post.published.$t).toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
+
+    let cardHtml = `
+      <a class="post-card" href="${postUrl}" style="text-decoration: none; display: block;">
+        <div class="post-card__img">
+          <img src="${thumbnail}" alt="${title}" loading="lazy" width="500" height="500">
+          <span class="img-overlay"><i class="fas fa-download"></i></span>
+        </div>
+        <div class="post-card__body">
+          <h3 class="post-card__title" title="${title}">${title}</h3>
+          <div class="post-card__version">${format ? 'Formato: '+format : (version ? 'Versión: '+version : '')}</div>
+          <div class="post-card__date">${dateStr}</div>
+          <div class="rating-stars">${renderStars(rating)}</div>
+        </div>
+        <div class="post-card__featured-tag">${firstLabel}</div>
+      </a>
+    `;
+    return cardHtml;
+  }
+
+  function renderPosts(posts) {
+    grid.innerHTML = '';
+    posts.forEach(function(post) {
+      grid.insertAdjacentHTML('beforeend', buildPostCard(post));
+    });
   }
 
   function renderPagination() {
@@ -1466,14 +1548,17 @@ body#layout .sidebar{width:35%}
 (function() {
   'use strict';
   const grid = document.getElementById('apk-carousel');
-  if (!grid) return;
+  const apkSection = document.getElementById('apk-section');
+  if (!grid || !apkSection) return;
 
-  const feedUrl = '/feeds/posts/default/-/APK?alt=json&max-results=8';
+  const feedUrl = '/feeds/posts/default/-/APK?alt=json&max-results=6';
 
   function renderApkPosts(posts) {
     if (!posts || posts.length === 0) {
-      grid.innerHTML = '<p style="color:#9e9e9e;text-align:center;width:100%;">No hay aplicaciones disponibles aún.</p>';
+      apkSection.style.display = 'none';
       return;
+    } else {
+      apkSection.style.display = 'block';
     }
 
     posts.forEach(function(post) {
@@ -1515,7 +1600,7 @@ body#layout .sidebar{width:35%}
             <span class="img-overlay"><i class="fas fa-download"></i></span>
           </div>
           <div class="post-card__body">
-            <h3 class="post-card__title">${title}</h3>
+            <h3 class="post-card__title" title="${title}">${title}</h3>
             <div class="post-card__version">${format ? 'Formato: '+format : (version ? 'Versión: '+version : '')}</div>
             <div class="post-card__date">${dateStr}</div>
             <div class="rating-stars">${renderStars(rating)}</div>
@@ -1527,29 +1612,38 @@ body#layout .sidebar{width:35%}
     });
   }
 
-  function renderStars(rating) {
-    if (rating === null || isNaN(rating)) return '';
-    let html = '';
-    let full = Math.floor(rating);
-    let partial = rating - full;
-    for(let s=0; s<5; s++) {
-      if(s < full) html += '<div class="rating-star full"></div>';
-      else if(s === full && partial > 0) {
-        let pct = Math.round(partial * 100);
-        html += `<div class="rating-star" style="background: linear-gradient(to right, #ffd700 ${pct}%, #e0e0e0 ${pct}%);"></div>`;
-      } else html += '<div class="rating-star empty"></div>';
-    }
-    return html;
-  }
-
   fetch(feedUrl)
     .then(function(response) { return response.json(); })
     .then(function(data) {
-      renderApkPosts(data.feed.entry);
+      var entries = data.feed.entry || [];
+      renderApkPosts(entries);
     })
     .catch(function() {
-      grid.innerHTML = '<p style="color:#9e9e9e;text-align:center;width:100%;">Error al cargar aplicaciones.</p>';
+      apkSection.style.display = 'none';
     });
+
+  // Botones del carrusel APK
+  var prevBtn = document.getElementById('apk-carousel-prev');
+  var nextBtn = document.getElementById('apk-carousel-next');
+
+  function updateApkButtons() {
+    if (!grid || !prevBtn || !nextBtn) return;
+    var tolerance = 2;
+    if (grid.scrollLeft <= tolerance) { prevBtn.classList.add('hidden-btn'); }
+    else { prevBtn.classList.remove('hidden-btn'); }
+    if (grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - tolerance) { nextBtn.classList.add('hidden-btn'); }
+    else { nextBtn.classList.remove('hidden-btn'); }
+  }
+
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', function() { grid.scrollBy({ left: -300, behavior: 'smooth' }); });
+    nextBtn.addEventListener('click', function() { grid.scrollBy({ left: 300, behavior: 'smooth' }); });
+    grid.addEventListener('scroll', updateApkButtons);
+    window.addEventListener('resize', updateApkButtons);
+    var observer = new MutationObserver(function() { updateApkButtons(); });
+    observer.observe(grid, { childList: true, subtree: true });
+    updateApkButtons();
+  }
 })();
 //]]>
 </script>
@@ -1576,6 +1670,24 @@ body#layout .sidebar{width:35%}
                   </div>
                 </b:if>
               </article>
+
+              <!-- INICIO CONTENEDOR DEL CARRUSEL (SOLO SI LA ENTRADA TIENE ETIQUETAS) -->
+              <b:if cond='data:post.labels'>
+                <div id='related-posts-root'>
+                  <div class='related-posts'>
+                    <h2 class='section-title' style='color: #e0e0e0;'><span class='title-underline'/>Contenido Relacionado</h2>
+                    <div class='related-grid' id='related-posts-grid'>
+                      <p style='color: #9e9e9e; text-align: center; width: 100%;'>Cargando relacionadas&#8230;</p>
+                    </div>
+                    <div class='carousel-controls'>
+                      <button aria-label='Ver anterior' class='carousel-btn' id='carousel-prev'><i class='fas fa-arrow-left'/> <span>Anterior</span></button>
+                      <button aria-label='Ver siguiente' class='carousel-btn' id='carousel-next'><span>Siguiente</span> <i class='fas fa-arrow-right'/></button>
+                    </div>
+                  </div>
+                </div>
+              </b:if>
+              <!-- FIN CONTENEDOR DEL CARRUSEL -->
+
               <b:if cond='data:post.allowComments'>
                 <div class='post-comments'>
                   <div class='widget-title'><span class='widget-name'><i class='far fa-comments'/> <b:message name='messages.numberOfComments'><b:param expr:value='data:post.numberOfComments' name='numComments'/></b:message></span></div>
@@ -1775,7 +1887,18 @@ body#layout .sidebar{width:35%}
   <a expr:class='&quot;goog-inline-block sharing-&quot; + data:platform.key' expr:data-url='data:originalUrl' expr:href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:onclick='data:onclick ? data:onclick : &quot;&quot;' expr:title='data:platform.shareMessage' target='_blank'><span class='share-button-link-text'><data:platform.shareMessage/></span></a>
 </b:includable>
         <b:includable id='post' var='post'>
-  <div class='post'><b:include data='post' name='postMeta'/><b:include data='post' name='postTitle'/><b:include name='headerByline'/><b:if cond='data:view.isSingleItem'><b:include data='post' name='postBody'/><b:else/><b:include data='post' name='postBodySnippet'/><b:include data='post' name='postJumpLink'/></b:if><b:include data='post' name='postFooter'/></div>
+  <div class='post'>
+    <b:include data='post' name='postMeta'/>
+    <b:include data='post' name='postTitle'/>
+    <b:include name='headerByline'/>
+    <b:if cond='data:view.isSingleItem'>
+      <b:include data='post' name='postBody'/>
+    <b:else/>
+      <b:include data='post' name='postBodySnippet'/>
+      <b:include data='post' name='postJumpLink'/>
+    </b:if>
+    <b:include data='post' name='postFooter'/>
+  </div>
 </b:includable>
         <b:includable id='postAuthor'>
   <span class='byline post-author vcard'><span class='post-author-label'><data:byline.label/></span><span class='fn'><b:if cond='data:post.author.profileUrl'><meta expr:content='data:post.author.profileUrl'/><a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'><span><data:post.author.name/></span></a><b:else/><span><data:post.author.name/></span></b:if></span></span>
@@ -1789,7 +1912,12 @@ body#layout .sidebar{width:35%}
         <b:includable id='postCommentsLink'>
   <b:if cond='data:view.isMultipleItems'><span class='byline post-comment-link container'><b:include cond='data:post.commentSource != 1' name='commentsLink'/></span></b:if>
 </b:includable>
-        <b:includable id='postFooter' var='post'><div class='post-footer'><b:include name='footerBylines'/><b:include data='post' name='postFooterAuthorProfile'/></div></b:includable>
+        <b:includable id='postFooter' var='post'>
+          <div class='post-footer'>
+            <b:include name='footerBylines'/>
+            <b:include data='post' name='postFooterAuthorProfile'/>
+          </div>
+        </b:includable>
         <b:includable id='postFooterAuthorProfile' var='post'>
   <b:if cond='data:post.author.aboutMe and data:view.isPost'><div class='author-profile'><b:if cond='data:post.author.authorPhoto.url'><img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/><div class='author-about'><b:include data='post' name='aboutPostAuthor'/></div><b:else/><b:include data='post' name='aboutPostAuthor'/></b:if></div></b:if>
 </b:includable>
@@ -2853,6 +2981,164 @@ document.addEventListener("DOMContentLoaded", function() {
     .catch(function() {
       tickerContent.innerHTML = '<span style="color:#e53935;font-size:0.8rem;">Error al cargar destacados.</span>';
     });
+})();
+//]]>
+</script>
+
+<script>
+//<![CDATA[
+(function() {
+  'use strict';
+  window.renderStars = function(rating) {
+    if (rating === null || isNaN(rating)) return '';
+    let html = '';
+    let full = Math.floor(rating);
+    let partial = rating - full;
+    for(let s=0; s<5; s++) {
+      if(s < full) html += '<div class="rating-star full"></div>';
+      else if(s === full && partial > 0) {
+        let pct = Math.round(partial * 100);
+        html += `<div class="rating-star" style="background: linear-gradient(to right, #ffd700 ${pct}%, #e0e0e0 ${pct}%);"></div>`;
+      } else html += '<div class="rating-star empty"></div>';
+    }
+    return html;
+  };
+
+  window.buildPostCard = function(post, currentUrl) {
+    let title = post.title.$t;
+    let postUrl = '';
+    for (let i = 0; i < post.link.length; i++) {
+      if (post.link[i].rel === 'alternate') { postUrl = post.link[i].href; break; }
+    }
+    if (postUrl === currentUrl) return null;
+
+    let thumbnail = 'https://2.bp.blogspot.com/-1J-byOnRoAI/W3Cot79qVUI/AAAAAAAADmE/IwXCcRdJl70_yR7FivfpmM62MVqD4CwbQCLcBGAs/s1600/no-img-blogger.png';
+    if (post.content && post.content.$t) {
+      let div = document.createElement('div');
+      div.innerHTML = post.content.$t;
+      let img = div.querySelector('img');
+      if (img && img.src) { thumbnail = img.src; }
+    }
+    if ((!thumbnail || thumbnail.indexOf('no-img-blogger') !== -1) && post.media$thumbnail && post.media$thumbnail.url) {
+      thumbnail = post.media$thumbnail.url.replace(/s72-c/, 's200-c');
+    }
+
+    let categories = [];
+    if (post.category) { post.category.forEach(c => categories.push(c.term)); }
+    let version = null, format = null, rating = null, firstLabel = categories.length > 0 ? categories[0] : '';
+    for(let i=0; i<categories.length; i++){
+      let lbl = categories[i].trim();
+      if(lbl.toLowerCase().match(/^w/)) { format = lbl.substring(1); break; }
+    }
+    if(!format) {
+      for(let i=0; i<categories.length; i++){
+        let lbl = categories[i].trim();
+        if(lbl.toLowerCase().match(/^v\d+(\.\d+)*/)) { version = lbl; break; }
+      }
+    }
+    for(let i=0; i<categories.length; i++){
+      let lbl = categories[i].trim();
+      let match = lbl.toLowerCase().match(/^z(\d+(?:\.\d+)?)/);
+      if(match) { rating = parseFloat(match[1]); break; }
+    }
+
+    let dateStr = new Date(post.published.$t).toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
+
+    let html = `
+      <a class="post-card" href="${postUrl}" style="text-decoration: none; display: block;">
+        <div class="post-card__img">
+          <img src="${thumbnail}" alt="${title}" loading="lazy" width="500" height="500">
+          <span class="img-overlay"><i class="fas fa-download"></i></span>
+          <span class="post-card__featured-tag">${firstLabel || ''}</span>
+        </div>
+        <div class="post-card__body">
+          <h3 class="post-card__title" title="${title}">${title}</h3>
+          <div class="post-card__version">${format ? 'Formato: '+format : (version ? 'Versión: '+version : '')}</div>
+          <div class="post-card__date">${dateStr}</div>
+          <div class="rating-stars">${window.renderStars(rating)}</div>
+        </div>
+      </a>
+    `;
+    return html;
+  };
+
+  var relatedGrid = document.getElementById('related-posts-grid');
+  if (relatedGrid) {
+    var prevBtn = document.getElementById('carousel-prev');
+    var nextBtn = document.getElementById('carousel-next');
+
+    function updateRelatedButtons() {
+      if (!relatedGrid || !prevBtn || !nextBtn) return;
+      var tolerance = 2;
+      if (relatedGrid.scrollLeft <= tolerance) { prevBtn.classList.add('hidden-btn'); }
+      else { prevBtn.classList.remove('hidden-btn'); }
+      if (relatedGrid.scrollLeft + relatedGrid.clientWidth >= relatedGrid.scrollWidth - tolerance) { nextBtn.classList.add('hidden-btn'); }
+      else { nextBtn.classList.remove('hidden-btn'); }
+    }
+
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', function() { relatedGrid.scrollBy({ left: -300, behavior: 'smooth' }); });
+      nextBtn.addEventListener('click', function() { relatedGrid.scrollBy({ left: 300, behavior: 'smooth' }); });
+      relatedGrid.addEventListener('scroll', updateRelatedButtons);
+      window.addEventListener('resize', updateRelatedButtons);
+      var observer = new MutationObserver(function() { updateRelatedButtons(); });
+      observer.observe(relatedGrid, { childList: true, subtree: true });
+      updateRelatedButtons();
+    }
+
+    var labelLinks = document.querySelectorAll('.post-labels a, .post-card__tags a');
+    var labels = [];
+    labelLinks.forEach(function(link) { labels.push(link.textContent.trim().toLowerCase()); });
+    var canonical = document.querySelector('link[rel="canonical"]');
+    var currentUrl = canonical ? canonical.href : window.location.href;
+
+    function fetchRelated(url, fallbackUrl) {
+      fetch(url).then(function(response) { return response.json(); })
+        .then(function(data) {
+          var entries = data.feed.entry || [];
+          var filtered = [];
+          for (var i = 0; i < entries.length; i++) {
+            var cardHtml = window.buildPostCard(entries[i], currentUrl);
+            if (cardHtml) filtered.push(cardHtml);
+            if (filtered.length >= 6) break;
+          }
+          if (filtered.length === 0 && fallbackUrl) { fetchRelated(fallbackUrl, null); }
+          else { relatedGrid.innerHTML = filtered.length ? filtered.join('') : '<p style="color:#9e9e9e;text-align:center;width:100%;">No hay entradas relacionadas aún.</p>'; updateRelatedButtons(); }
+        }).catch(function() { if (fallbackUrl) { fetchRelated(fallbackUrl, null); } else { relatedGrid.innerHTML = '<p style="color:#9e9e9e;text-align:center;width:100%;">Error al cargar relacionadas.</p>'; updateRelatedButtons(); } });
+    }
+
+    if (labels.length > 0) {
+      var primaryLabel = labels[0];
+      var relatedUrl = '/feeds/posts/default/-/' + encodeURIComponent(primaryLabel) + '?alt=json&max-results=7';
+      var fallbackUrl = '/feeds/posts/default?alt=json&max-results=7';
+      fetchRelated(relatedUrl, fallbackUrl);
+    } else { fetchRelated('/feeds/posts/default?alt=json&max-results=7', null); }
+  }
+
+  var apkGrid = document.getElementById('apk-carousel');
+  if (apkGrid) {
+    var apkFeedUrl = '/feeds/posts/default/-/APK?alt=json&max-results=6';
+    fetch(apkFeedUrl).then(function(response) { return response.json(); })
+      .then(function(data) {
+        var entries = data.feed.entry || [];
+        if (entries.length === 0) {
+          // El JS ya oculta el contenedor en renderApkPosts
+          // Pero llamamos a renderApkPosts para que lo oculte
+          renderApkPosts(entries);
+          return;
+        }
+        var html = '';
+        for (var i = 0; i < entries.length; i++) {
+          var cardHtml = window.buildPostCard(entries[i], null);
+          if (cardHtml) html += cardHtml;
+        }
+        apkGrid.innerHTML = html || '<p style="color:#9e9e9e;text-align:center;width:100%;">No hay aplicaciones disponibles aún.</p>';
+      }).catch(function() {
+        // Si falla, ocultamos la sección
+        var apkSection = document.getElementById('apk-section');
+        if (apkSection) apkSection.style.display = 'none';
+      });
+  }
 })();
 //]]>
 </script>
