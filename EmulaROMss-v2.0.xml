@@ -2006,148 +2006,9 @@ body#layout .sidebar{width:35%}
   </div>
   <aside class='sidebar'>
     <b:section id='sidebar-section'>
-      <b:widget id='HTML4' locked='false' title='' type='HTML' visible='true'>
-        <b:widget-settings>
-          <b:widget-setting name='content'><![CDATA[<div class="widget">
-  <div class="widget__title"><i class="fas fa-clock"></i> Recién Actualizado</div>
-  <div class="widget-content" id="recent-posts-container">
-    <p style="color:#9e9e9e;text-align:center;padding:1rem 0;">Cargando entradas...</p>
-  </div>
-</div>
-
-<script>
-//<![CDATA[
-(function() {
-  var container = document.getElementById('recent-posts-container');
-  if (!container) return;
-
-  var maxPosts = 3;
-  var feedUrl = '/feeds/posts/default?alt=json&max-results=' + maxPosts;
-
-  fetch(feedUrl)
-    .then(function(response) { return response.json(); })
-    .then(function(data) {
-      var posts = data.feed.entry;
-      if (!posts || posts.length === 0) {
-        container.innerHTML = '<p style="color:#9e9e9e;text-align:center;">No hay entradas aún.</p>';
-        return;
-      }
-
-      var html = '';
-      posts.forEach(function(post) {
-        var title = post.title.$t;
-        var postUrl = '';
-        for (var i = 0; i < post.link.length; i++) {
-          if (post.link[i].rel === 'alternate') {
-            postUrl = post.link[i].href;
-            break;
-          }
-        }
-        var published = post.published.$t;
-        var dateObj = new Date(published);
-        var dateStr = dateObj.toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
-
-        var thumbnail = '';
-        if (post.media$thumbnail && post.media$thumbnail.url) {
-          thumbnail = post.media$thumbnail.url.replace(/s72-c/, 's400');
-        } else {
-          thumbnail = 'https://2.bp.blogspot.com/-1J-byOnRoAI/W3Cot79qVUI/AAAAAAAADmE/IwXCcRdJl70_yR7FivfpmM62MVqD4CwbQCLcBGAs/s1600/no-img-blogger.png';
-        }
-
-        var categories = [];
-        if (post.category) {
-          for (var c = 0; c < post.category.length; c++) {
-            categories.push(post.category[c].term);
-          }
-        }
-        var firstLabel = categories.length > 0 ? categories[0] : '';
-
-        var format = null;
-        var version = null;
-        for (var j = 0; j < categories.length; j++) {
-          var lbl = categories[j].trim();
-          if (lbl.toLowerCase().match(/^w/)) {
-            format = lbl.substring(1);
-            break;
-          }
-        }
-        if (!format) {
-          for (var k = 0; k < categories.length; k++) {
-            var lbl2 = categories[k].trim();
-            if (lbl2.toLowerCase().match(/^v\d+(\.\d+)*/)) {
-              version = lbl2;
-              break;
-            }
-          }
-        }
-
-        var rating = null;
-        for (var m = 0; m < categories.length; m++) {
-          var lbl3 = categories[m].trim();
-          var match = lbl3.toLowerCase().match(/^z(\d+(?:\.\d+)?)/);
-          if (match) {
-            rating = parseFloat(match[1]);
-            break;
-          }
-        }
-
-        var starsHtml = '';
-        if (rating !== null && !isNaN(rating)) {
-          var fullStars = Math.floor(rating);
-          var partialFill = rating - fullStars;
-          for (var s = 0; s < 5; s++) {
-            if (s < fullStars) {
-              starsHtml += '<div class="rating-star full"></div>';
-            } else if (s === fullStars && partialFill > 0) {
-              var percent = Math.round(partialFill * 100);
-              starsHtml += '<div class="rating-star" style="background: linear-gradient(to right, #ffd700 ' + percent + '%, #e0e0e0 ' + percent + '%);"></div>';
-            } else {
-              starsHtml += '<div class="rating-star empty"></div>';
-            }
-          }
-        }
-
-        html += '<a class="popular-post-link" href="' + postUrl + '" aria-label="' + title + '">';
-        html += '<div class="popular-post__img-wrapper">';
-        html += '<img class="popular-post__img" src="' + thumbnail + '" alt="' + title + '" width="65" height="65" loading="lazy" />';
-        if (firstLabel) {
-          html += '<div class="popular-post__featured-tag">' + firstLabel + '</div>';
-        }
-        html += '</div>';
-        html += '<div style="flex:1;min-width:0;">';
-        html += '<div class="popular-post__title">' + title + '</div>';
-        if (format) {
-          html += '<div class="popular-post__version">Formato: <span class="version-value">' + format + '</span></div>';
-        } else if (version) {
-          html += '<div class="popular-post__version">Versión: <span class="version-value">' + version + '</span></div>';
-        }
-        html += '<div class="popular-post__date">' + dateStr + '</div>';
-        if (starsHtml) {
-          html += '<div class="rating-stars">' + starsHtml + '</div>';
-        }
-        html += '</div>';
-        html += '</a>';
-      });
-
-      container.innerHTML = html;
-    })
-    .catch(function() {
-      container.innerHTML = '<p style="color:#9e9e9e;text-align:center;">Error al cargar las entradas.</p>';
-    });
-})();
-//]]]]><![CDATA[>
-</script>]]></b:widget-setting>
-        </b:widget-settings>
-        <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-      </b:widget>
       <b:widget id='HTML2' locked='false' title='' type='HTML' visible='true'>
         <b:widget-settings>
-          <b:widget-setting name='content'><![CDATA[<center><script async="async" data-cfasync="false" src="https://pl30614062.effectivecpmnetwork.com/0e913119b41a9154c679bcc8c2131461/invoke.js"></script>
+          <b:widget-setting name='content'><![CDATA[<center><script async="async" data-cfasync="false" src="https://potterynaggingformerly.com/0e913119b41a9154c679bcc8c2131461/invoke.js"></script>
 <div id="container-0e913119b41a9154c679bcc8c2131461"></div>
 </center>]]></b:widget-setting>
         </b:widget-settings>
@@ -2518,6 +2379,156 @@ body#layout .sidebar{width:35%}
       </li>
     </b:loop>
   </ul>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML3' locked='false' title='' type='HTML' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<center><a href="https://beta.publishers.adsterra.com/referral/xPuNFWWNnz" rel="nofollow"><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/300x250_adsterra_reff.gif" /></a></center>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML4' locked='false' title='' type='HTML' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<div class="widget">
+  <div class="widget__title"><i class="fas fa-clock"></i> Recién Actualizado</div>
+  <div class="widget-content" id="recent-posts-container">
+    <p style="color:#9e9e9e;text-align:center;padding:1rem 0;">Cargando entradas...</p>
+  </div>
+</div>
+
+<script>
+//<![CDATA[
+(function() {
+  var container = document.getElementById('recent-posts-container');
+  if (!container) return;
+
+  var maxPosts = 3;
+  var feedUrl = '/feeds/posts/default?alt=json&max-results=' + maxPosts;
+
+  fetch(feedUrl)
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      var posts = data.feed.entry;
+      if (!posts || posts.length === 0) {
+        container.innerHTML = '<p style="color:#9e9e9e;text-align:center;">No hay entradas aún.</p>';
+        return;
+      }
+
+      var html = '';
+      posts.forEach(function(post) {
+        var title = post.title.$t;
+        var postUrl = '';
+        for (var i = 0; i < post.link.length; i++) {
+          if (post.link[i].rel === 'alternate') {
+            postUrl = post.link[i].href;
+            break;
+          }
+        }
+        var published = post.published.$t;
+        var dateObj = new Date(published);
+        var dateStr = dateObj.toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
+
+        var thumbnail = '';
+        if (post.media$thumbnail && post.media$thumbnail.url) {
+          thumbnail = post.media$thumbnail.url.replace(/s72-c/, 's400');
+        } else {
+          thumbnail = 'https://2.bp.blogspot.com/-1J-byOnRoAI/W3Cot79qVUI/AAAAAAAADmE/IwXCcRdJl70_yR7FivfpmM62MVqD4CwbQCLcBGAs/s1600/no-img-blogger.png';
+        }
+
+        var categories = [];
+        if (post.category) {
+          for (var c = 0; c < post.category.length; c++) {
+            categories.push(post.category[c].term);
+          }
+        }
+        var firstLabel = categories.length > 0 ? categories[0] : '';
+
+        var format = null;
+        var version = null;
+        for (var j = 0; j < categories.length; j++) {
+          var lbl = categories[j].trim();
+          if (lbl.toLowerCase().match(/^w/)) {
+            format = lbl.substring(1);
+            break;
+          }
+        }
+        if (!format) {
+          for (var k = 0; k < categories.length; k++) {
+            var lbl2 = categories[k].trim();
+            if (lbl2.toLowerCase().match(/^v\d+(\.\d+)*/)) {
+              version = lbl2;
+              break;
+            }
+          }
+        }
+
+        var rating = null;
+        for (var m = 0; m < categories.length; m++) {
+          var lbl3 = categories[m].trim();
+          var match = lbl3.toLowerCase().match(/^z(\d+(?:\.\d+)?)/);
+          if (match) {
+            rating = parseFloat(match[1]);
+            break;
+          }
+        }
+
+        var starsHtml = '';
+        if (rating !== null && !isNaN(rating)) {
+          var fullStars = Math.floor(rating);
+          var partialFill = rating - fullStars;
+          for (var s = 0; s < 5; s++) {
+            if (s < fullStars) {
+              starsHtml += '<div class="rating-star full"></div>';
+            } else if (s === fullStars && partialFill > 0) {
+              var percent = Math.round(partialFill * 100);
+              starsHtml += '<div class="rating-star" style="background: linear-gradient(to right, #ffd700 ' + percent + '%, #e0e0e0 ' + percent + '%);"></div>';
+            } else {
+              starsHtml += '<div class="rating-star empty"></div>';
+            }
+          }
+        }
+
+        html += '<a class="popular-post-link" href="' + postUrl + '" aria-label="' + title + '">';
+        html += '<div class="popular-post__img-wrapper">';
+        html += '<img class="popular-post__img" src="' + thumbnail + '" alt="' + title + '" width="65" height="65" loading="lazy" />';
+        if (firstLabel) {
+          html += '<div class="popular-post__featured-tag">' + firstLabel + '</div>';
+        }
+        html += '</div>';
+        html += '<div style="flex:1;min-width:0;">';
+        html += '<div class="popular-post__title">' + title + '</div>';
+        if (format) {
+          html += '<div class="popular-post__version">Formato: <span class="version-value">' + format + '</span></div>';
+        } else if (version) {
+          html += '<div class="popular-post__version">Versión: <span class="version-value">' + version + '</span></div>';
+        }
+        html += '<div class="popular-post__date">' + dateStr + '</div>';
+        if (starsHtml) {
+          html += '<div class="rating-stars">' + starsHtml + '</div>';
+        }
+        html += '</div>';
+        html += '</a>';
+      });
+
+      container.innerHTML = html;
+    })
+    .catch(function() {
+      container.innerHTML = '<p style="color:#9e9e9e;text-align:center;">Error al cargar las entradas.</p>';
+    });
+})();
+//]]]]><![CDATA[>
+</script>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
 </b:includable>
       </b:widget>
     </b:section>
@@ -3143,7 +3154,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //]]>
 </script>
 
-<script src='https://pl30614061.effectivecpmnetwork.com/1c/34/3f/1c343fd9d03ab80d35b55b6b062926bb.js'/>
+<script src='https://potterynaggingformerly.com/1c/34/3f/1c343fd9d03ab80d35b55b6b062926bb.js'/>
 
 </body>
 </html>
