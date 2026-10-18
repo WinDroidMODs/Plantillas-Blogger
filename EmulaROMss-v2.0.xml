@@ -8,7 +8,6 @@
   
 <meta content='vkBIkIlipRaAVyFP19JptqcD_1yhF7WVYRyR4LG8t0Y' name='google-site-verification'/>
   
-<!-- Google tag (gtag.js) -->
 <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-Z61XVJJ1HM'/>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,7 +16,7 @@
 
   gtag(&#39;config&#39;, &#39;G-Z61XVJJ1HM&#39;);
 </script>
-  
+   
 <meta expr:charset='data:blog.encoding'/>
 <meta expr:content='data:view.isHomepage ? &quot;website&quot; : &quot;article&quot;' property='og:type'/>
 <meta content='width=device-width,initial-scale=1' name='viewport'/>
@@ -1044,13 +1043,13 @@ body#layout .sidebar{width:35%}
     <b:section id='header-logo'>
       <b:widget id='Header1' locked='false' title='EmulaROMss (Encabezado)' type='Header' version='2' visible='true'>
         <b:widget-settings>
-          <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEipXG_XYAtxcznROTTLYAT4bByFeIt05T9l3hDtXEUyTE1uYlGUNN6bUi103V-HME8GySODKBXRu1czYQfq1PFsf5d0CVpTSRRti_v0usglZx4mQ-OpmAyt3wxgSWuq1OWss4Z2nyN5khEcYlNesQGDKq_AR4afdx9_U60y-o-MbGA51EUaJKW0XcaF2GA=s500</b:widget-setting>
-          <b:widget-setting name='displayHeight'>500</b:widget-setting>
-          <b:widget-setting name='sectionWidth'>1388</b:widget-setting>
+          <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmdgT_N0RHovOTQaXo0o2fbUcxgUgRP0uCSoBlO5sesphDQzZhV3rDGxPiXK_RQSqlI3motgpNjXrn9zSgVHIc0j_wKWVnI2wtvIg7cdA9mbvPNmewng5Ej_58YTNZj4bY2nBx4rSY1C22BtH0gQBgbITABjVQmMiAVwhxOQV3RAwjNbdHtX3f8Z4lWGjA/s1080/EmulaROMss-Logo-PNG.png</b:widget-setting>
+          <b:widget-setting name='displayHeight'>1078</b:widget-setting>
+          <b:widget-setting name='sectionWidth'>150</b:widget-setting>
           <b:widget-setting name='useImage'>true</b:widget-setting>
           <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
           <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
-          <b:widget-setting name='displayWidth'>500</b:widget-setting>
+          <b:widget-setting name='displayWidth'>1080</b:widget-setting>
         </b:widget-settings>
         <b:includable id='main'>
           <div class='logo' expr:class='&quot;logo&quot; + (data:image ? &quot; has-image&quot; : &quot;&quot;)'>
@@ -1256,28 +1255,23 @@ body#layout .sidebar{width:35%}
     <b:section id='BlogSection' showaddelement='no'>
       <b:widget id='Blog1' locked='false' title='Entradas del blog' type='Blog' version='2' visible='true'>
         <b:widget-settings>
+          <b:widget-setting name='showDateHeader'>false</b:widget-setting>
           <b:widget-setting name='commentLabel'>Comentarios</b:widget-setting>
           <b:widget-setting name='showShareButtons'>true</b:widget-setting>
           <b:widget-setting name='authorLabel'>Posted by:</b:widget-setting>
+          <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+          <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
+          <b:widget-setting name='showAuthor'>false</b:widget-setting>
           <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
           <b:widget-setting name='timestampLabel'/>
           <b:widget-setting name='reactionsLabel'/>
           <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
           <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+          <b:widget-setting name='showLabels'>true</b:widget-setting>
           <b:widget-setting name='showLocation'>false</b:widget-setting>
+          <b:widget-setting name='postLabelsLabel'>Labels:</b:widget-setting>
           <b:widget-setting name='showTimestamp'>true</b:widget-setting>
           <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-          <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-          <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-          <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
-          <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-          <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
-          <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
-          <b:widget-setting name='showAuthor'>false</b:widget-setting>
-          <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
-          <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-          <b:widget-setting name='showLabels'>true</b:widget-setting>
-          <b:widget-setting name='postLabelsLabel'>Labels:</b:widget-setting>
           <b:widget-setting name='showBacklinks'>false</b:widget-setting>
           <b:widget-setting name='showInlineAds'>false</b:widget-setting>
           <b:widget-setting name='showReactions'>false</b:widget-setting>
@@ -2006,19 +2000,6 @@ body#layout .sidebar{width:35%}
   </div>
   <aside class='sidebar'>
     <b:section id='sidebar-section'>
-      <b:widget id='HTML2' locked='false' title='' type='HTML' visible='true'>
-        <b:widget-settings>
-          <b:widget-setting name='content'><![CDATA[<center><script async="async" data-cfasync="false" src="https://potterynaggingformerly.com/0e913119b41a9154c679bcc8c2131461/invoke.js"></script>
-<div id="container-0e913119b41a9154c679bcc8c2131461"></div>
-</center>]]></b:widget-setting>
-        </b:widget-settings>
-        <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-      </b:widget>
       <b:widget id='PopularPosts1' locked='false' title='Lo más Descargado' type='PopularPosts' version='2' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
@@ -2330,60 +2311,11 @@ body#layout .sidebar{width:35%}
   </div>
 </b:includable>
       </b:widget>
-      <b:widget id='Label1' locked='false' title='Categorias' type='Label' version='2' visible='true'>
+      <b:widget id='HTML2' locked='false' title='' type='HTML' visible='true'>
         <b:widget-settings>
-          <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
-          <b:widget-setting name='display'>CLOUD</b:widget-setting>
-          <b:widget-setting name='selectedLabelsList'>PSP,apk</b:widget-setting>
-          <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
-          <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-        </b:widget-settings>
-        <b:includable id='main'>
-          <div class='widget'>
-            <div class='widget__title'><i class='fas fa-tags'/> Categorias</div>
-            <div class='widget-content tag-cloud'>
-              <b:loop values='data:labels' var='label'><a expr:href='data:label.url'><data:label.name/></a></b:loop>
-            </div>
-          </div>
-        </b:includable>
-        <b:includable id='cloud'>
-  <b:loop values='data:labels' var='label'>
-    <span class='label-size'>
-      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
-      <a class='label-name' expr:href='data:label.url'>
-        <data:label.name/>
-        <b:if cond='data:this.showFreqNumbers'>
-          <span class='label-count'><data:label.count/></span>
-        </b:if>
-      </a>
-    </span>
-  </b:loop>
-</b:includable>
-        <b:includable id='content'>
-  <div class='widget-content'>
-    <b:class expr:name='data:this.display + &quot;-label-widget-content&quot;'/>
-    <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
-    <b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
-  </div>
-</b:includable>
-        <b:includable id='list'>
-  <ul>
-    <b:loop values='data:labels' var='label'>
-      <li>
-        <a class='label-name' expr:href='data:label.url'>
-          <data:label.name/>
-          <b:if cond='data:this.showFreqNumbers'>
-            <span class='label-count'><data:label.count/></span>
-          </b:if>
-        </a>
-      </li>
-    </b:loop>
-  </ul>
-</b:includable>
-      </b:widget>
-      <b:widget id='HTML3' locked='false' title='' type='HTML' visible='true'>
-        <b:widget-settings>
-          <b:widget-setting name='content'><![CDATA[<center><a href="https://beta.publishers.adsterra.com/referral/xPuNFWWNnz" rel="nofollow"><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/300x250_adsterra_reff.gif" /></a></center>]]></b:widget-setting>
+          <b:widget-setting name='content'><![CDATA[<center><script async="async" data-cfasync="false" src="https://potterynaggingformerly.com/0e913119b41a9154c679bcc8c2131461/invoke.js"></script>
+<div id="container-0e913119b41a9154c679bcc8c2131461"></div>
+</center>]]></b:widget-setting>
         </b:widget-settings>
         <b:includable id='main'>
   <b:include name='widget-title'/>
@@ -2529,6 +2461,57 @@ body#layout .sidebar{width:35%}
   <div class='widget-content'>
     <data:content/>
   </div>
+</b:includable>
+      </b:widget>
+      <b:widget id='Label1' locked='false' title='Categorias' type='Label' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
+          <b:widget-setting name='display'>CLOUD</b:widget-setting>
+          <b:widget-setting name='selectedLabelsList'>PSP,apk</b:widget-setting>
+          <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+          <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <div class='widget'>
+            <div class='widget__title'><i class='fas fa-tags'/> Categorias</div>
+            <div class='widget-content tag-cloud'>
+              <b:loop values='data:labels' var='label'><a expr:href='data:label.url'><data:label.name/></a></b:loop>
+            </div>
+          </div>
+        </b:includable>
+        <b:includable id='cloud'>
+  <b:loop values='data:labels' var='label'>
+    <span class='label-size'>
+      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
+      <a class='label-name' expr:href='data:label.url'>
+        <data:label.name/>
+        <b:if cond='data:this.showFreqNumbers'>
+          <span class='label-count'><data:label.count/></span>
+        </b:if>
+      </a>
+    </span>
+  </b:loop>
+</b:includable>
+        <b:includable id='content'>
+  <div class='widget-content'>
+    <b:class expr:name='data:this.display + &quot;-label-widget-content&quot;'/>
+    <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
+    <b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
+  </div>
+</b:includable>
+        <b:includable id='list'>
+  <ul>
+    <b:loop values='data:labels' var='label'>
+      <li>
+        <a class='label-name' expr:href='data:label.url'>
+          <data:label.name/>
+          <b:if cond='data:this.showFreqNumbers'>
+            <span class='label-count'><data:label.count/></span>
+          </b:if>
+        </a>
+      </li>
+    </b:loop>
+  </ul>
 </b:includable>
       </b:widget>
     </b:section>
