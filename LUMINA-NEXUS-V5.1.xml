@@ -6,8 +6,6 @@
 
 <head>
 
-<meta content='b404cbac55ef4cdc48dabbc06f411a68af73e22e' name='b404cbac55ef4cdc48dabbc06f411a68af73e22e'/>
-
 <!-- SECTION: META TAGS -->
 <meta expr:charset='data:blog.encoding'/>
 <meta expr:content='data:view.isHomepage ? &quot;website&quot; : &quot;article&quot;' property='og:type'/>
@@ -53,13 +51,13 @@
 </script>
 
 <!-- SECTION: PERFORMANCE HINTS -->
-<link rel='preconnect' href='https://fonts.googleapis.com'/>
-<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='anonymous'/>
-<link rel='preconnect' href='https://cdnjs.cloudflare.com' crossorigin='anonymous'/>
-<link rel='dns-prefetch' href='https://blogger.googleusercontent.com'/>
-<link rel='dns-prefetch' href='https://1.bp.blogspot.com'/>
-<link rel='dns-prefetch' href='https://resources.blogblog.com'/>
-<link rel='dns-prefetch' href='https://bellnewyork.org'/>
+<link href='https://fonts.googleapis.com' rel='preconnect'/>
+<link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
+<link crossorigin='anonymous' href='https://cdnjs.cloudflare.com' rel='preconnect'/>
+<link href='https://blogger.googleusercontent.com' rel='dns-prefetch'/>
+<link href='https://1.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='https://resources.blogblog.com' rel='dns-prefetch'/>
+<link href='https://bellnewyork.org' rel='dns-prefetch'/>
 
 <!-- SECTION: FONTS & ICONS -->
 <link href='https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap' rel='stylesheet'/>
@@ -1008,8 +1006,6 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
           <b:widget-setting name='showInlineAds'>false</b:widget-setting>
           <b:widget-setting name='showReactions'>false</b:widget-setting>
         </b:widget-settings>
-
-        <!-- SECTION: BLOG MAIN INCLUDABLE -->
         <b:includable id='main'>
 
           <!-- SECTION: 404 ERROR PAGE -->
@@ -1017,7 +1013,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
             <div class='error-page'>
               <div class='error-code'>404</div>
               <h1 class='error-title'>Page not found</h1>
-              <p class='error-text'>The page you are looking for doesn't exist or has been moved. Try searching for the game you need, or explore our categories below.</p>
+              <p class='error-text'>The page you are looking for doesn&#39;t exist or has been moved. Try searching for the game you need, or explore our categories below.</p>
               <form action='/search' class='error-search' method='get'>
                 <input name='q' placeholder='Search games...' type='text'/>
                 <button type='submit'><i class='fas fa-search'/><span>Search</span></button>
@@ -1053,13 +1049,13 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
               <!-- SECTION: POSTS GRID (Empty container to load via JS) -->
               <div class='posts-grid' id='posts-container'>
                 <div style='grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--cy-cyan);'>
-                  <i class='fas fa-spinner fa-spin' style='font-size: 2rem; margin-bottom: 10px;'></i>
+                  <i class='fas fa-spinner fa-spin' style='font-size: 2rem; margin-bottom: 10px;'/>
                   <p>Loading games...</p>
                 </div>
               </div>
 
               <!-- SECTION: CUSTOM PAGINATION -->
-              <div class='pagination-container' id='custom-pagination'></div>
+              <div class='pagination-container' id='custom-pagination'/>
 
             <b:else/>
 
@@ -1133,7 +1129,6 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
           </b:if>
 
         </b:includable>
-
         <b:includable id='aboutPostAuthor'>
           <div class='author-name'>
             <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'><span><data:post.author.name/></span></a>
@@ -1353,7 +1348,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
             </b:loop>
           </b:if>
         </b:includable>
-        <b:includable id='googlePlusShare'></b:includable>
+        <b:includable id='googlePlusShare'/>
         <b:includable id='headerByline'>
           <b:if cond='data:widgets.Blog.first.headerByline'>
             <div class='post-header'>
@@ -1497,7 +1492,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
             <b:include cond='data:view.url != data:blog.homepageUrl' name='homePageLink'/>
           </div>
         </b:includable>
-        <b:includable id='postReactions'></b:includable>
+        <b:includable id='postReactions'/>
         <b:includable id='postShareButtons'>
           <div class='byline post-share-buttons goog-inline-block'>
             <b:with value='data:sharingId ?: ((data:widget.instanceId ?: &quot;sharing&quot;) + &quot;-&quot; + (data:regionName ?: &quot;byline&quot;) + &quot;-&quot; + data:post.id)' var='sharingId'>
@@ -1592,7 +1587,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
               <b:if cond='data:post.showManageComments'><b:include data='post' name='manageComments'/></b:if>
             </p>
             <b:if cond='data:showCmtPopup'>
-              <div id='comment-popup'><iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'></iframe></div>
+              <div id='comment-popup'><iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'/></div>
             </b:if>
           </section>
         </b:includable>
@@ -1622,7 +1617,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
           </div>
         </b:includable>
       </b:widget>
-      <b:widget id='HTML9' locked='false' title='' type='HTML' visible='true'>
+      <b:widget id='HTML9' locked='false' title='' type='HTML' version='2' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='content'><![CDATA[<script async="async" data-cfasync="false" src="https://bellnewyork.org/21/16618ace296a8f77843e4c4d0ff94b1a"></script>
 <div id="container-16618ace296a8f77843e4c4d0ff94b1a"></div>]]></b:widget-setting>
@@ -1698,11 +1693,15 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
 <div class='ad-container'>
   <b:section id='footer-ads' showaddelement='yes'>
     <b:widget id='HTML5' locked='false' title='Desktop Ad' type='HTML' version='2' visible='false'>
-      <b:widget-settings><b:widget-setting name='content'/></b:widget-settings>
+      <b:widget-settings>
+        <b:widget-setting name='content'/>
+      </b:widget-settings>
       <b:includable id='main'><div class='ad-desktop'><data:content/></div></b:includable>
     </b:widget>
     <b:widget id='HTML6' locked='false' title='Mobile Ad' type='HTML' version='2' visible='false'>
-      <b:widget-settings><b:widget-setting name='content'/></b:widget-settings>
+      <b:widget-settings>
+        <b:widget-setting name='content'/>
+      </b:widget-settings>
       <b:includable id='main'><div class='ad-mobile'><data:content/></div></b:includable>
     </b:widget>
   </b:section>
@@ -1782,7 +1781,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
 </div>
 
 <!-- SECTION: MODAL - COOKIES REJECTED -->
-<div class='blocker-modal' id='cookie-reject-modal' role='dialog' aria-modal='true' aria-labelledby='reject-title'>
+<div aria-labelledby='reject-title' aria-modal='true' class='blocker-modal' id='cookie-reject-modal' role='dialog'>
   <div class='blocker-modal__box'>
     <div class='blocker-modal__icon'><i class='fas fa-shield-halved'/></div>
     <h2 class='blocker-modal__title' id='reject-title'>Content unavailable</h2>
@@ -1797,7 +1796,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
 </div>
 
 <!-- SECTION: MODAL - ADBLOCK DETECTED -->
-<div class='blocker-modal' id='adblock-modal' role='dialog' aria-modal='true' aria-labelledby='adblock-title'>
+<div aria-labelledby='adblock-title' aria-modal='true' class='blocker-modal' id='adblock-modal' role='dialog'>
   <div class='blocker-modal__box'>
     <div class='blocker-modal__icon'><i class='fas fa-hand-holding-dollar'/></div>
     <h2 class='blocker-modal__title' id='adblock-title'>Support <data:blog.title/></h2>
