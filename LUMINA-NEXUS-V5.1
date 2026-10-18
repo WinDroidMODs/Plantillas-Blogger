@@ -2,12 +2,13 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' b:responsive='true' expr:dir='data:blog.locale.languageDirection' expr:lang='data:blog.locale.language' prefix='og: http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 
-<!-- LUMINA NEXUS v4.4 | Author: Robinson Avila | By: WinDroidMODs -->
+<!-- LUMINA NEXUS v5.1 | Author: Robinson Avila | By: WinDroidMODs -->
 
 <head>
 
-<!-- SECTION: META TAGS -->
 <meta content='b404cbac55ef4cdc48dabbc06f411a68af73e22e' name='b404cbac55ef4cdc48dabbc06f411a68af73e22e'/>
+
+<!-- SECTION: META TAGS -->
 <meta expr:charset='data:blog.encoding'/>
 <meta expr:content='data:view.isHomepage ? &quot;website&quot; : &quot;article&quot;' property='og:type'/>
 <meta content='width=device-width,initial-scale=1' name='viewport'/>
@@ -378,9 +379,9 @@ a:hover { color: var(--cy-magenta); }
 .psp-card::before { content: ''; position: absolute; inset: 0; border-radius: 16px; padding: 1px; background: linear-gradient(135deg, rgba(0,240,255,0.5), rgba(255,45,149,0.5), rgba(180,41,249,0.5)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity .4s; pointer-events: none; z-index: 5; }
 .psp-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 24px 60px rgba(0,0,0,0.6), 0 0 40px rgba(0,240,255,0.25); border-color: transparent !important; }
 .psp-card:hover::before { opacity: 1; }
-.psp-card-image { width: 100%; position: relative; background: #0a0a1a; display: block; overflow: hidden; line-height: 0; aspect-ratio: 1 / 1; }
+.psp-card-image { width: 100%; position: relative; background: #0a0a1a; display: block; overflow: hidden; line-height: 0; }
 .psp-card-image a { display: block; line-height: 0; }
-.psp-card-image img { width: 100%; height: 100%; display: block; transition: transform .7s cubic-bezier(.22,1,.36,1), filter .5s; filter: saturate(1.05); object-fit: cover; }
+.psp-card-image img { width: 100%; height: auto; display: block; transition: transform .7s cubic-bezier(.22,1,.36,1), filter .5s; filter: saturate(1.05); }
 .psp-card:hover .psp-card-image img { transform: scale(1.05); filter: saturate(1.25) brightness(1.08); }
 .psp-no-image { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, rgba(0,240,255,.12), rgba(10,10,26,1)); color: var(--cy-cyan); font-size: 2.5rem; opacity: .7; }
 .psp-tags { position: absolute; top: 12px; left: 12px; z-index: 3; display: flex; gap: 6px; flex-wrap: wrap; max-width: calc(100% - 24px); }
@@ -459,6 +460,7 @@ a:hover { color: var(--cy-magenta); }
 
 /* SECTION: CUSTOM PAGINATION (Estilo Screenshot) */
 .pagination-container { margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--cy-border) !important; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.pag-wrapper { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; }
 .pag-info { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--cy-muted); }
 .pag-info strong { color: var(--cy-cyan); font-size: 1rem; }
 .pag-numbers { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
@@ -525,7 +527,7 @@ a:hover { color: var(--cy-magenta); }
 /* SECTION: COOKIE BANNER & MODALS */
 .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #080814 !important; border-top: 1px solid var(--cy-border-hi) !important; z-index: 10000; padding: 1.1rem 1.5rem; display: none; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; box-shadow: 0 -10px 60px rgba(0,240,255,.15); }
 .cookie-banner__text { flex: 1 1 280px; font-size: 0.85rem; color: #cfcfdd !important; line-height: 1.55; text-align: center; }
-.cookie-banner__text a { color: var(--cy-cyan) !important; font-weight: 600; }
+.cookie-banner__text a { color: var(--cy-cyan) !important; font-weight: 700; text-decoration: underline; }
 .cookie-banner__actions { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; }
 .cookie-banner__btn { padding: 0.6rem 1.8rem; border-radius: 40px; font-size: 0.82rem; font-weight: 700; cursor: pointer; transition: all .3s; font-family: 'Orbitron', sans-serif; letter-spacing: 1px; white-space: nowrap; text-transform: uppercase; border: none; }
 .cookie-banner__btn--accept { background: linear-gradient(135deg, #00f0ff 0%, #b429f9 100%) !important; color: #06060f !important; box-shadow: 0 6px 24px rgba(0,240,255,.4); }
@@ -543,9 +545,24 @@ a:hover { color: var(--cy-magenta); }
 .blocker-modal__text { color: #cfcfdd; font-size: .92rem; line-height: 1.65; margin: 0 0 14px; }
 .blocker-modal__text strong { color: var(--cy-cyan); font-weight: 700; }
 .blocker-modal__actions { margin-top: 22px; display: flex; flex-direction: column; gap: 10px; }
-.blocker-modal__actions .cookie-banner__btn { padding: 14px 28px; font-size: .85rem; }
+.blocker-modal__actions .cookie-banner__btn { 
+  padding: 14px 20px; 
+  font-size: .85rem; 
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  white-space: normal; 
+  line-height: 1.4; 
+  height: auto; 
+  min-height: 48px; 
+  word-break: break-word; 
+}
+.blocker-modal__actions .cookie-banner__btn i { margin-right: 6px; }
 .blocker-modal__hint { font-size: .76rem; color: var(--cy-muted); margin: 18px 0 0; padding-top: 16px; border-top: 1px dashed rgba(0,240,255,.15); }
-.blocker-modal__hint a { color: var(--cy-cyan); }
+.blocker-modal__hint a { color: var(--cy-cyan); text-decoration: underline; font-weight: 700; }
 
 /* SECTION: FOOTER */
 footer { background: rgba(8,8,20,0.96) !important; border-top: 1px solid var(--cy-border) !important; color: var(--cy-text) !important; padding: 40px 0 28px; margin-top: 60px; position: relative; overflow: hidden; }
@@ -616,8 +633,11 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
   .related-carousel .psp-card-title { font-size: 0.76rem; margin-bottom: 6px; height: 2.4em; }
   .related-carousel .psp-stats span { font-size: 0.6rem; }
   .rel-btn { width: 36px; height: 36px; font-size: 0.82rem; border-radius: 10px; }
-  .blocker-modal__box { padding: 28px 22px 22px; }
-  .blocker-modal__title { font-size: 1.15rem; }
+  .blocker-modal__box { padding: 24px 18px; }
+  .blocker-modal__title { font-size: 1.1rem; margin-bottom: 12px; }
+  .blocker-modal__text { font-size: 0.85rem; line-height: 1.5; }
+  .blocker-modal__icon { width: 60px; height: 60px; font-size: 1.4rem; margin-bottom: 12px; }
+  .blocker-modal__actions .cookie-banner__btn { font-size: 0.8rem; padding: 12px 16px; }
 }
 
 /* SECTION: RESPONSIVE - TABLET */
@@ -782,6 +802,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
                 </ul>
               </li>
               <li><a href='/p/about.html'><i class='fas fa-circle-info'></i>About</a></li>
+              <li><a href='/p/faq.html'><i class='fas fa-question-circle'></i>FAQ</a></li>
               <li><a href='/p/contact.html'><i class='fas fa-envelope'></i>Contact</a></li>
             </ul>]]></b:widget-setting>
           </b:widget-settings>
@@ -936,6 +957,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
               </ul>
             </li>
             <li><a href='/p/about.html'><i class='fas fa-circle-info'></i>About</a></li>
+            <li><a href='/p/faq.html'><i class='fas fa-question-circle'></i>FAQ</a></li>
             <li><a href='/p/contact.html'><i class='fas fa-envelope'></i>Contact</a></li>
           </ul>
           </nav>
@@ -1692,7 +1714,6 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
     <b:section id='footer-links' showaddelement='yes'>
       <b:widget id='LinkList1' locked='false' title='Legal Links' type='LinkList' version='2' visible='true'>
         <b:widget-settings>
-          <b:widget-setting name='link-7'>/p/faq.html</b:widget-setting>
           <b:widget-setting name='link-5'>/p/disclaimer.html</b:widget-setting>
           <b:widget-setting name='link-6'>/p/dmca.html</b:widget-setting>
           <b:widget-setting name='link-3'>/p/terms-of-service.html</b:widget-setting>
@@ -1703,7 +1724,6 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
           <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
           <b:widget-setting name='text-5'>Disclaimer</b:widget-setting>
           <b:widget-setting name='text-4'>Remove Content</b:widget-setting>
-          <b:widget-setting name='text-7'>FAQ</b:widget-setting>
           <b:widget-setting name='text-6'>DMCA</b:widget-setting>
           <b:widget-setting name='sorting'>NONE</b:widget-setting>
           <b:widget-setting name='link-1'>/p/cookie-policy.html</b:widget-setting>
@@ -1753,7 +1773,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
 <div class='cookie-banner' id='cookie-banner'>
   <p class='cookie-banner__text'>
     We use cookies on <data:blog.title/> to improve your experience. By continuing to browse, you agree to our
-    <a href='/p/cookie-policy.html' rel='nofollow' style='white-space: nowrap;'>Cookie Policy</a>.
+    <a href='/p/cookie-policy.html' rel='nofollow' style='white-space: nowrap; text-decoration: underline; font-weight: 700;'>Cookie Policy</a>.
   </p>
   <div class='cookie-banner__actions'>
     <button aria-label='Accept cookies' class='cookie-banner__btn cookie-banner__btn--accept' id='cookie-accept'>Accept</button>
@@ -1766,7 +1786,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
   <div class='blocker-modal__box'>
     <div class='blocker-modal__icon'><i class='fas fa-shield-halved'/></div>
     <h2 class='blocker-modal__title' id='reject-title'>Content unavailable</h2>
-    <p class='blocker-modal__text'>To access <strong>EMULAROOMS</strong> you need to accept our cookie policy. Cookies allow us to keep the site running and offer you the content for free.</p>
+    <p class='blocker-modal__text'>To access <strong><data:blog.title/></strong> you need to accept our cookie policy. Cookies allow us to keep the site running and offer you the content for free.</p>
     <div class='blocker-modal__actions'>
       <button class='cookie-banner__btn cookie-banner__btn--accept' id='reject-accept' type='button'>
         <i class='fas fa-check'/> Accept and continue
@@ -1780,7 +1800,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
 <div class='blocker-modal' id='adblock-modal' role='dialog' aria-modal='true' aria-labelledby='adblock-title'>
   <div class='blocker-modal__box'>
     <div class='blocker-modal__icon'><i class='fas fa-hand-holding-dollar'/></div>
-    <h2 class='blocker-modal__title' id='adblock-title'>Support EMULAROOMS</h2>
+    <h2 class='blocker-modal__title' id='adblock-title'>Support <data:blog.title/></h2>
     <p class='blocker-modal__text'>We detected that you are using an <strong>ad blocker</strong>. Our content is free thanks to the sponsors that appear on the site.</p>
     <p class='blocker-modal__text'>To keep sharing games and resources, please <strong>disable the ad blocker</strong> for this site and reload the page. Ads are our only source of income and allow us to keep the content active.</p>
     <div class='blocker-modal__actions'>
@@ -1942,26 +1962,29 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
 
   function detectAdblock() {
     return new Promise(function(resolve) {
+      // Restaurado a v4.6: Tamaño 300x250 y clases completas para evitar falsos positivos en navegadores con protección de rastreo.
       var bait = document.createElement('div');
       bait.className = 'adsbox ad-banner ad-placement pub_300x250 pub_300x250m text-ad textAd text_ad text-ads text-ad-links ad-unit adsbygoogle';
-      bait.style.cssText = 'position:fixed!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;pointer-events:none!important;';
+      bait.style.cssText = 'position:absolute!important;left:-9999px!important;top:-9999px!important;width:300px!important;height:250px!important;';
       bait.innerHTML = '&nbsp;';
       document.body.appendChild(bait);
+
       setTimeout(function() {
         var blocked = false;
         try {
           var cs = getComputedStyle(bait);
-          blocked = bait.offsetHeight === 0 || bait.clientHeight === 0 || bait.offsetParent === null || cs.display === 'none' || cs.visibility === 'hidden' || cs.opacity === '0';
+          blocked = bait.offsetHeight === 0 || 
+                    bait.clientHeight === 0 || 
+                    bait.offsetParent === null || 
+                    cs.display === 'none' || 
+                    cs.visibility === 'hidden' || 
+                    parseFloat(cs.opacity) === 0;
         } catch(e) { blocked = false; }
+        
         if (bait.parentNode) bait.parentNode.removeChild(bait);
-        if (blocked) return resolve(true);
-        var ctrl = window.AbortController ? new AbortController() : null;
-        var timer = setTimeout(function() { if (ctrl) ctrl.abort(); }, 2500);
-        fetch('https://bellnewyork.org/22/c45b5095b36f117f69d55e7e041649fe', {
-          method: 'HEAD', mode: 'no-cors', cache: 'no-store', credentials: 'omit', signal: ctrl ? ctrl.signal : undefined
-        }).then(function() { clearTimeout(timer); resolve(false); })
-          .catch(function() { clearTimeout(timer); resolve(true); });
-      }, 220);
+        
+        resolve(blocked);
+      }, 350);
     });
   }
 
@@ -1990,10 +2013,32 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
   }
 
   function initConsentGate() {
+    var path = window.location.pathname;
+    var isLegalPage = path.indexOf('/p/cookie-policy') !== -1 || path.indexOf('/p/privacy-policy') !== -1 || path.indexOf('/p/legal-notice') !== -1;
+
     var consent = localStorage.getItem(CONSENT_KEY);
     var banner = document.getElementById('cookie-banner');
-    if (!consent) { if (banner) banner.style.display = 'flex'; return; }
-    if (consent === 'rejected') { showModal('cookie-reject-modal'); return; }
+
+    if (isLegalPage) {
+      // En páginas legales nunca bloqueamos, pero mostramos el banner para que acepten si quieren
+      hideModal('cookie-reject-modal');
+      hideModal('adblock-modal');
+      if (consent !== 'accepted') {
+        if (banner) banner.style.display = 'flex';
+      } else {
+        if (banner) banner.style.display = 'none';
+      }
+      return;
+    }
+
+    if (!consent) {
+      if (banner) banner.style.display = 'flex';
+      return;
+    }
+    if (consent === 'rejected') {
+      showModal('cookie-reject-modal');
+      return;
+    }
     if (banner) banner.style.display = 'none';
     gateAfterAccept();
   }
@@ -2192,8 +2237,7 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
     var container = document.getElementById('posts-container');
     if (!container) return;
 
-    fetch(getListingFeedUrl())
-      .then(function(r) { return r.json(); })
+    cachedFetchJson(getListingFeedUrl())
       .then(function(data) {
         var entries = (data.feed && data.feed.entry) ? data.feed.entry : [];
         var totalPosts = data.feed && data.feed.openSearch$totalResults ? parseInt(data.feed.openSearch$totalResults.$t) : 0;
@@ -2379,11 +2423,25 @@ footer::after { content: ''; position: absolute; top: 0; left: 50%; transform: t
     else if (q) window.location.href = '/search?q=' + encodeURIComponent(q);
     return false;
   };
+
+  /* SECTION: HERO DESCRIPTION FALLBACK */
+  (function() {
+    var heroTitle = document.getElementById('hero-description');
+    if (!heroTitle) return;
+    var currentText = heroTitle.textContent.trim();
+    if (!currentText) {
+      var metaDesc = document.querySelector('meta[name="description"]') || document.querySelector('meta[property="og:description"]');
+      if (metaDesc) {
+        var descText = metaDesc.getAttribute('content');
+        if (descText) heroTitle.textContent = descText;
+      }
+    }
+  })();
+
 })();
 //]]>
 </script>
 
-<!-- SECTION: AD NETWORK (Bottom) -->
 <script data-cfasync='false' src='https://bellnewyork.org/14/d0746166040cf778fce7407b9be8ba7f'/>
 
 </body>
